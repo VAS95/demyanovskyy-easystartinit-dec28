@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<title>TestTaskPage</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<!-- START OF TASK #2.1 -->
+				<div id="task_1">
+					<div class="container">
+						<div class="mainHeader">Practice standard layouts</div>
+						<div class="subHeader">Position №1. Each of the orange blocks is on the same distance from green block independently from the size (dimensions) of the last one.</div>
+						<div id="centralSquare1">
+							<div class="orangeSquare topRight"></div>
+							<div class="orangeSquare topLeft"></div>
+							<div class="orangeSquare bottomRight"></div>
+							<div class="orangeSquare bottomLeft"></div>
+						</div>
+
+						<div class="inputTitle">NEW WIDTH:</div><input type="text" name="newWidthOfSquare1" class="square1Width" value="400"><br>
+						<div class="inputTitle">NEW HEIGHT:</div><input type="text" name="newHeightOfSquare1" class="square1Height" value="400"><br>
+						<button id="applyNewSizeOfSquare1Button" onclick="apply1ButtonClick()">Apply new dimensions!</button>
+					</div>
+				</div>
+				<!-- END OF TASK #2.1 -->
+
+				<!-- START OF TASK #2.2 -->
+				<div id="task_2">
+					<div class="container">
+						<div class="subHeader">Position №2. The same task but now orange blocks centered vertically and horizontally by green block and position not affected by size changes.</div>
+						<div id="centralSquare2">
+							<div class="orangeSquare topSquare"></div>
+							<div class="orangeSquare leftSquare"></div>
+							<div class="orangeSquare rightSquare"></div>
+							<div class="orangeSquare bottomSquare"></div>
+						</div><br><br><br>
+
+						<div class="inputTitle">NEW WIDTH:</div><input type="text" name="newWidthOfSquare2" class="square2Width" value="400"><br>
+						<div class="inputTitle">NEW HEIGHT:</div><input type="text" name="newHeightOfSquare2" class="square2Height" value="400"><br>
+						<button id="applyNewSizeOfSquare2Button" onclick="apply2ButtonClick()">Apply new dimensions!</button>
+					</div>
+				</div>
+				<!-- END OF TASK #2.2 -->
+			</div>
+			<footer id="footer">
+				<div id="footerText">
+					Created by <span><a href="https://github.com/VAS95">Vasiliy Demyanovskyy</a></span> for <span><a href="http://mate.academy/">Mate Academy</a></span>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,403 @@
+/*----------> START MAIN STYLES OF PAGE <----------*/
+* {
+	margin: 0;
+	padding: 0
+	outline: none:
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #F6F6F6;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+a:hover {
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /*ie8*/
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+div {
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+}
+
+p {
+	text-indent: 50px;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+#content {
+	flex: 1 0 auto;
+}
+/*----------> END MAIN STYLES OF PAGE <----------*/
+
+/*----------> START MAIN STYLES OF CONTENT <----------*/
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.mainHeader{
+	font-size: 50px;
+	height: 60px;
+}
+
+.subHeader{
+	font-size: 25px;
+	height: 50px;
+	padding: 10px 0 80px 0;
+	text-align: center;
+}
+
+
+#task_1, #task_2 {
+	padding-top: 50px;
+	text-align: center;
+}
+/*----------> END MAIN STYLES OF CONTENT <----------*/
+
+/*----------> START SQUARES STYLES <----------*/
+#centralSquare1, #centralSquare2 {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	background-color: #C4DF9A;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.orangeSquare {
+	background-color: #F7941D;
+	width: 100px;
+	height: 100px;
+}
+/*----------> END SQUARES STYLES <----------*/
+
+/*----------> START STYLES OF TASK #1 <----------*/
+.topRight {
+	top: 0;
+	right: 0;
+	position: absolute;
+	transform: translate(120%, 0);
+}
+
+.topLeft {
+	top: 0;
+	left: 0;
+	position: absolute;
+	transform: translate(-120%, 0);
+}
+
+.bottomLeft {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	transform: translate(-120%, 0);
+}
+
+.bottomRight {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	transform: translate(120%, 0);
+}
+/*----------> END STYLES OF TASK #1 <----------*/
+
+/*----------> START STYLES OF TASK #2 <----------*/
+.topSquare {
+	top: 0;
+	left: 50%;
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+}
+
+.leftSquare {
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	display: inline-block;
+	transform: translate(-50%, -50%);
+}
+
+.rightSquare {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	display: inline-block;
+	transform: translate(50%, -50%);
+}
+
+.bottomSquare {
+	bottom: 0;
+	left: 50%;
+	position: absolute;
+	display: inline-block;
+	transform: translate(-50%, 50%);
+}
+/*----------> END STYLES OF TASK #2 <----------*/
+
+/*----------> START STYLES OF DIMENSION CONTROL AREA <----------*/
+.inputTitle, .square1Width, .square1Height, .square2Width, .square2Height {
+	margin: 5px;
+	height: 30px;
+	font-size: 1.6em;
+	display: inline-block;
+	text-align: center;
+}
+
+#applyNewSizeOfSquare1Button, #applyNewSizeOfSquare2Button {
+	margin: 15px 0 25px 0;
+	width: 500px;
+	height: 60px;
+	font-size: 1.7em;
+}
+/*----------> END STYLES OF DIMENSION CONTROL AREA <----------*/
+
+/*----------> START FOOTER STYLES <----------*/
+#footer {
+	float: left;
+	background-color: #343434;
+	width: 98%;
+	padding: 1%;
+	color: white;
+	border-top: 5px solid #59595a;
+}
+
+#footerText {
+	margin-right: 5%;
+	color: #AEAEAE;
+	font-size: 1.5em;
+	float: right;
+}
+
+#footerText>span>a {
+	color: #C34F25;
+}
+/*----------> END FOOTER STYLES <----------*/
+
+/*---------------------------------FLOAT-TASK--------------------------------------------*/
+
+/*----------> START V1 STYLES <----------*/
+header {
+	float: left;
+	width: 99.4%;
+	margin: 1px 5px;
+	border: 2px solid black;
+	font-size: 3em;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+}
+
+#leftSideV1 {
+	float: left;
+	margin: 5px 2.5px;
+	width: 31%;
+	height: 3000px;
+	border: 2px solid black;
+	font-size: 3em;
+	text-align: center;
+	line-height: 3000px;
+}
+
+#rightSideV1 {
+	float: right;
+	margin: 5px 2.5px;
+	width: 68%;
+	height: 3000px;
+	border: 2px solid black;
+	font-size: 3em;
+	text-align: center;
+	line-height: 3000px;
+}
+/*----------> END V1 STYLES <----------*/
+
+/*----------> START V2 STYLES <----------*/
+#leftSideV2 {
+	float: left;
+	margin: 5px 2.5px 5px 2.5px;
+	width: 25.5%;
+	height: 3000px;
+	border: 2px solid black;
+	font-size: 3em;
+	text-align: center;
+	line-height: 3000px;
+}
+
+#centerV2 {
+	float: left;
+	margin: 5px 2.5px 2.5px 5px;
+	width: 47%;
+	height: 3000px;
+	border: 2px solid black;
+	font-size: 3em;
+	text-align: center;
+	line-height: 3000px;
+}
+
+#rightSideV2 {
+	float: right;
+	margin: 5px 5px 5px 2.5px;
+	width: 25.5%;
+	height: 3000px;
+	border: 2px solid black;
+	font-size: 3em;
+	text-align: center;
+	line-height: 3000px;
+}
+/*----------> END V2 STYLES <----------*/
+
+/*----------> START V3 STYLES <----------*/
+#logo {
+	float: left;
+	width: 15%;
+	height: 80px;
+	margin: 8px;
+	border: 2px solid black;
+	font-size: 1.5em;
+	line-height: 80px;
+}
+
+#headerContent {
+	float: right;
+	width: 50%;
+	height: 80px;
+	margin: 8px;
+	border: 2px solid black;
+	font-size: 1.5em;
+	line-height: 80px;
+}
+
+#leftSideV3 {
+	float: left;
+	margin: 5px 2.5px;
+	width: 30%;
+	height: 3000px;
+	border: 2px solid black;
+	font-size: 3em;
+	text-align: center;
+	line-height: 3000px;
+}
+
+#rightSideV3 {
+	float: right;
+	margin: 5px 2.5px;
+	width: 68%;
+	height: 3000px;
+	border: 2px solid black;
+	font-size: 3em;}
+
+.block {
+	width: 30.9%;
+	height: 350px;
+	margin: 20px 0 0 20px;
+	border: 2px solid black;
+	float: left;
+	text-align: center;
+	line-height: 350px;
+}
+/*----------> END V3 STYLES <----------*/
+
+/*----------> START V4 STYLES <----------*/
+.imageLeft, .imageRight {	
+	width: 29%;
+	margin: 40px;
+	padding: 10px;	
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.textRight, .textLeft {	
+	width: 59%;
+	padding: 15px;
+	margin: 40px;
+	border: 2px solid black;
+	font-size: 1.4em;
+	height: 400px;
+	border-radius: 5px;
+	line-height: 35px;
+}
+
+.imageLeft, .textLeft { 
+	float: left; 
+}
+
+.imageRight, .textRight { 
+	float: right; 
+}
+
+.imageLeft>img, .imageRight>img, .imageFull>img {
+	width: 100%;
+	height: 400px;
+	border-radius: 5px;
+}
+
+.imageFull {
+	float: left;
+	width: 96%;
+	margin: 40px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5px;	
+}
+/*----------> END V4 STYLES <----------*/
+
+/*----------> START FOOTER STYLES <----------*/
+#footerFloatTask {
+	float: left;
+	margin: 1px 5px;
+	width: 99.4%;
+	border: 2px solid black;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+#footerFloatTask>#footerText {
+	margin-right: 5%;
+	font-size: 2.5em;
+}
+
+#footerFloatTask>#footerText>span>a {
+	color: #C34F25;
+}
+/*----------> END FOOTER STYLES <----------
